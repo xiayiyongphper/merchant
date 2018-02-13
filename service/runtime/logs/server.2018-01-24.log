@@ -1,0 +1,9 @@
+[2018-01-24 10:11:08] MasterPid=22909|Manager_pid=22912
+[2018-01-24 10:11:08] Server: start.Swoole version is [1.8.4]
+[2018-01-24 10:11:08] onManagerStart-22912
+[2018-01-24 15:22:05] MasterPid=27634|Manager_pid=27635
+[2018-01-24 15:22:05] Server: start.Swoole version is [1.8.4]
+[2018-01-24 15:22:05] onManagerStart-27635
+[2018-01-24 15:57:46] MasterPid=28984|Manager_pid=28985
+[2018-01-24 15:57:46] Server: start.Swoole version is [1.8.4]
+[2018-01-24 15:57:46] onManagerStart-28985

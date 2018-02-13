@@ -1,0 +1,3102 @@
+[
+    {
+        "name": "yiisoft/yii2-composer",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-composer.git",
+            "reference": "0f4765940fe49333f2108275d338fc24daa124ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-composer-2.0.4-505f0b.zip",
+            "reference": "0f4765940fe49333f2108275d338fc24daa124ba",
+            "shasum": "30886fb9c672200f4486e5f965b204096b999b65"
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "time": "2016-02-06T00:49:24+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "yii\\composer\\Plugin",
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\composer\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The composer plugin for Yii extension installer",
+        "keywords": [
+            "composer",
+            "extension installer",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-composer/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-composer"
+        }
+    },
+    {
+        "name": "bower-asset/jquery",
+        "version": "2.2.4",
+        "version_normalized": "2.2.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jquery/jquery-dist.git",
+            "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
+            "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
+            "shasum": ""
+        },
+        "time": "2016-05-20T17:24:43+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "dist/jquery.js",
+            "bower-asset-ignore": [
+                "package.json"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "keywords": [
+            "browser",
+            "javascript",
+            "jquery",
+            "library"
+        ]
+    },
+    {
+        "name": "bower-asset/bootstrap",
+        "version": "v3.3.7",
+        "version_normalized": "3.3.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+            "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.9.1,<4.0"
+        },
+        "time": "2016-07-25T15:51:55+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "less/bootstrap.less",
+                "dist/js/bootstrap.js"
+            ],
+            "bower-asset-ignore": [
+                "/.*",
+                "_config.yml",
+                "CNAME",
+                "composer.json",
+                "CONTRIBUTING.md",
+                "docs",
+                "js/tests",
+                "test-infra"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+        "keywords": [
+            "css",
+            "framework",
+            "front-end",
+            "js",
+            "less",
+            "mobile-first",
+            "responsive",
+            "web"
+        ]
+    },
+    {
+        "name": "bower-asset/jquery.inputmask",
+        "version": "3.3.8",
+        "version_normalized": "3.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/RobinHerbots/Inputmask.git",
+            "reference": "791d84990c4a98df1597e9d155be53a3725805dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/791d84990c4a98df1597e9d155be53a3725805dd",
+            "reference": "791d84990c4a98df1597e9d155be53a3725805dd",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.7"
+        },
+        "time": "2017-08-24T08:08:54+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "./dist/inputmask/inputmask.js",
+                "./dist/inputmask/inputmask.extensions.js",
+                "./dist/inputmask/inputmask.date.extensions.js",
+                "./dist/inputmask/inputmask.numeric.extensions.js",
+                "./dist/inputmask/inputmask.phone.extensions.js",
+                "./dist/inputmask/jquery.inputmask.js",
+                "./dist/inputmask/global/document.js",
+                "./dist/inputmask/global/window.js",
+                "./dist/inputmask/phone-codes/phone.js",
+                "./dist/inputmask/phone-codes/phone-be.js",
+                "./dist/inputmask/phone-codes/phone-nl.js",
+                "./dist/inputmask/phone-codes/phone-ru.js",
+                "./dist/inputmask/phone-codes/phone-uk.js",
+                "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.jqlite.js",
+                "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.jquery.js",
+                "./dist/inputmask/dependencyLibs/inputmask.dependencyLib.js",
+                "./dist/inputmask/bindings/inputmask.binding.js"
+            ],
+            "bower-asset-ignore": [
+                "**/*",
+                "!dist/*",
+                "!dist/inputmask/*",
+                "!dist/min/*",
+                "!dist/min/inputmask/*"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "http://opensource.org/licenses/mit-license.php"
+        ],
+        "description": "Inputmask is a javascript library which creates an input mask.  Inputmask can run against vanilla javascript, jQuery and jqlite.",
+        "keywords": [
+            "form",
+            "input",
+            "inputmask",
+            "jquery",
+            "mask",
+            "plugins"
+        ]
+    },
+    {
+        "name": "bower-asset/punycode",
+        "version": "v1.3.2",
+        "version_normalized": "1.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bestiejs/punycode.js.git",
+            "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bestiejs/punycode.js/zipball/38c8d3131a82567bfef18da09f7f4db68c84f8a3",
+            "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3",
+            "shasum": ""
+        },
+        "time": "2014-10-22T12:02:42+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "punycode.js",
+            "bower-asset-ignore": [
+                "coverage",
+                "tests",
+                ".*",
+                "component.json",
+                "Gruntfile.js",
+                "node_modules",
+                "package.json"
+            ]
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "bower-asset/yii2-pjax",
+        "version": "v2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/jquery-pjax.git",
+            "reference": "60728da6ade5879e807a49ce59ef9a72039b8978"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/60728da6ade5879e807a49ce59ef9a72039b8978",
+            "reference": "60728da6ade5879e807a49ce59ef9a72039b8978",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.8"
+        },
+        "time": "2016-03-04T13:24:47+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "./jquery.pjax.js",
+            "bower-asset-ignore": [
+                ".travis.yml",
+                "Gemfile",
+                "Gemfile.lock",
+                "CONTRIBUTING.md",
+                "vendor/",
+                "script/",
+                "test/"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "cebe/markdown",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cebe/markdown.git",
+            "reference": "54a2c49de31cc44e864ebf0500a35ef21d0010b2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/cebe-markdown-1.1.0-d980e8.zip",
+            "reference": "54a2c49de31cc44e864ebf0500a35ef21d0010b2",
+            "shasum": "5cd9fce671831e2a62bfcca01ca9d5e9df133094"
+        },
+        "require": {
+            "lib-pcre": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "cebe/indent": "*",
+            "facebook/xhprof": "*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2015-03-06T05:28:07+00:00",
+        "bin": [
+            "bin/markdown"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "cebe\\markdown\\": ""
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Creator"
+            }
+        ],
+        "description": "A super fast, highly extensible markdown parser for PHP",
+        "homepage": "https://github.com/cebe/markdown#readme",
+        "keywords": [
+            "extensible",
+            "fast",
+            "gfm",
+            "markdown",
+            "markdown-extra"
+        ],
+        "support": {
+            "issues": "https://github.com/cebe/markdown/issues",
+            "source": "https://github.com/cebe/markdown"
+        }
+    },
+    {
+        "name": "christeredvartsen/sysinfo",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/christeredvartsen/sysinfo.git",
+            "reference": "8e9614737f5ce4263efc9d68be7c44e2074a53c2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/christeredvartsen-sysinfo-0.1.0-61d766.zip",
+            "reference": "8e9614737f5ce4263efc9d68be7c44e2074a53c2",
+            "shasum": "99b7020fb29c4f36b458176a2bf9fafa4be6c3f4"
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2012-07-16T09:44:02+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "SysInfo": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Christer Edvartsen",
+                "email": "cogo@starzinger.net"
+            }
+        ],
+        "description": "SysInfo is a PHP library that can be used to fetch information about the system (CPU usage, Load avg., Memory usage +++)",
+        "homepage": "https://github.com/christeredvartsen/sysinfo",
+        "keywords": [
+            "sysinfo"
+        ],
+        "support": {
+            "issues": "https://github.com/christeredvartsen/sysinfo/issues"
+        }
+    },
+    {
+        "name": "psr/log",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/psr-log-1.0.0-e71523.zip",
+            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "shasum": "e0933de5bfea94ef45564a8c4b52960172c12657"
+        },
+        "time": "2012-12-21T11:40:51+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Psr\\Log\\": ""
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "react/promise",
+        "version": "v2.4.1",
+        "version_normalized": "2.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/reactphp/promise.git",
+            "reference": "f8fa5935d6cea970847844c2cf8ffac421a94b73"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/react-promise-v2.4.1-f61f70.zip",
+            "reference": "f8fa5935d6cea970847844c2cf8ffac421a94b73",
+            "shasum": "ebc24fc68563cdb02f60de8f8fd7bbe833065e08"
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-05-03T17:50:52+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "React\\Promise\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "React\\Promise\\": "tests/fixtures"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Sorgalla",
+                "email": "jsorgalla@gmail.com"
+            }
+        ],
+        "description": "A lightweight implementation of CommonJS Promises/A for PHP"
+    },
+    {
+        "name": "guzzlehttp/streams",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/streams.git",
+            "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/guzzlehttp-streams-3.0.0-c67b5d.zip",
+            "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+            "shasum": "bfbe46da668555d7a9fefd890c513bfc4e191947"
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2014-10-12T19:12:31+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Stream\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Provides a simple abstraction over streams of data",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "guzzle",
+            "stream"
+        ]
+    },
+    {
+        "name": "guzzlehttp/ringphp",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/RingPHP.git",
+            "reference": "dbbb91d7f6c191e5e405e900e3102ac7f261bc0b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/guzzlehttp-ringphp-1.1.0-6654cd.zip",
+            "reference": "dbbb91d7f6c191e5e405e900e3102ac7f261bc0b",
+            "shasum": "1f12c62c51c867c5e0bfa1dcb6514ac534155923"
+        },
+        "require": {
+            "guzzlehttp/streams": "~3.0",
+            "php": ">=5.4.0",
+            "react/promise": "~2.0"
+        },
+        "require-dev": {
+            "ext-curl": "*",
+            "phpunit/phpunit": "~4.0"
+        },
+        "suggest": {
+            "ext-curl": "Guzzle will use specific adapters if cURL is present"
+        },
+        "time": "2015-05-20T03:37:09+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Ring\\": "src/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "GuzzleHttp\\Tests\\Ring\\": "tests/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function."
+    },
+    {
+        "name": "elasticsearch/elasticsearch",
+        "version": "v5.0.0",
+        "version_normalized": "5.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/elastic/elasticsearch-php.git",
+            "reference": "d0aba85c4a8f27ba1e8cc328981008b089f3fc4f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/elasticsearch-elasticsearch-v5.0.0-0bc0e1.zip",
+            "reference": "d0aba85c4a8f27ba1e8cc328981008b089f3fc4f",
+            "shasum": "369d6f167d9bbdd64998893e358d928dccc1788a"
+        },
+        "require": {
+            "guzzlehttp/ringphp": "~1.0",
+            "php": "^5.6.6|^7.0",
+            "psr/log": "~1.0"
+        },
+        "require-dev": {
+            "cpliakas/git-wrapper": "~1.0",
+            "doctrine/inflector": "^1.1",
+            "mockery/mockery": "0.9.4",
+            "phpunit/phpunit": "^4.7|^5.4",
+            "sami/sami": "~3.2",
+            "symfony/finder": "^2.8",
+            "symfony/yaml": "^2.8"
+        },
+        "suggest": {
+            "ext-curl": "*",
+            "monolog/monolog": "Allows for client-level logging and tracing"
+        },
+        "time": "2016-10-26T14:35:32+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Elasticsearch\\": "src/Elasticsearch/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "Elasticsearch\\Tests\\": "tests/Elasticsearch/Tests/"
+            }
+        },
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Zachary Tong"
+            }
+        ],
+        "description": "PHP Client for Elasticsearch",
+        "keywords": [
+            "client",
+            "elasticsearch",
+            "search"
+        ]
+    },
+    {
+        "name": "ezyang/htmlpurifier",
+        "version": "v4.6.0",
+        "version_normalized": "4.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ezyang/htmlpurifier.git",
+            "reference": "dfe1dbe4e96fe96a1153d4c8b14fe5dbab85d4ac"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/ezyang-htmlpurifier-v4.6.0-b63b2d.zip",
+            "reference": "dfe1dbe4e96fe96a1153d4c8b14fe5dbab85d4ac",
+            "shasum": "c9f4f82c7838e1e03a88d36df27e9483458cd4d4"
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "time": "2013-11-30T08:25:19+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "HTMLPurifier": "library/"
+            },
+            "files": [
+                "library/HTMLPurifier.composer.php"
+            ]
+        },
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Edward Z. Yang",
+                "email": "admin@htmlpurifier.org",
+                "homepage": "http://ezyang.com"
+            }
+        ],
+        "description": "Standards compliant HTML filter written in PHP",
+        "homepage": "http://htmlpurifier.org/",
+        "keywords": [
+            "html"
+        ]
+    },
+    {
+        "name": "geerlingguy/ping",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/geerlingguy/Ping.git",
+            "reference": "df6be89643b04d7fcd67a3470295e01ff6d77f72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/geerlingguy-ping-1.1.1-2090ba.zip",
+            "reference": "df6be89643b04d7fcd67a3470295e01ff6d77f72",
+            "shasum": "e74114f7d02676b9fdee3b4a3207215e24f3cced"
+        },
+        "time": "2016-06-04T21:28:28+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "JJG/Ping.php"
+            ]
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jeff Geerling",
+                "email": "jeff@jeffgeerling.com"
+            }
+        ],
+        "description": "A PHP class to ping hosts."
+    },
+    {
+        "name": "justinrainbow/json-schema",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/justinrainbow/json-schema.git",
+            "reference": "6b2a33e6a768f96bdc2ead5600af0822eed17d67"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/justinrainbow-json-schema-2.0.5-72b913.zip",
+            "reference": "6b2a33e6a768f96bdc2ead5600af0822eed17d67",
+            "shasum": "302f4eca25330611eea0c6b97a50da22980ae157"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "json-schema/json-schema-test-suite": "1.2.0",
+            "phpdocumentor/phpdocumentor": "~2",
+            "phpunit/phpunit": "^4.8.22"
+        },
+        "time": "2016-06-02T10:59:52+00:00",
+        "bin": [
+            "bin/validate-json"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "JsonSchema\\": "src/JsonSchema/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "JsonSchema\\Tests\\": "tests/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bruno Prieto Reis",
+                "email": "bruno.p.reis@gmail.com"
+            },
+            {
+                "name": "Justin Rainbow",
+                "email": "justin.rainbow@gmail.com"
+            },
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            },
+            {
+                "name": "Robert Schönthal",
+                "email": "seroscho@googlemail.com"
+            }
+        ],
+        "description": "A library to validate a json schema.",
+        "homepage": "https://github.com/justinrainbow/json-schema",
+        "keywords": [
+            "json",
+            "schema"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2",
+        "version": "2.0.12",
+        "version_normalized": "2.0.12.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-framework.git",
+            "reference": "5f8cc84e77d9480742e1b76c3ce93cc47e0f1cd5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-2.0.12-b45fbe.zip",
+            "reference": "5f8cc84e77d9480742e1b76c3ce93cc47e0f1cd5",
+            "shasum": "c85e52e2cdddc7ba91417e13abdc64084e04dd95"
+        },
+        "require": {
+            "bower-asset/jquery": "2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+            "bower-asset/jquery.inputmask": "~3.2.2 | ~3.3.5",
+            "bower-asset/punycode": "1.3.*",
+            "bower-asset/yii2-pjax": "~2.0.1",
+            "cebe/markdown": "~1.0.0 | ~1.1.0",
+            "ext-ctype": "*",
+            "ext-mbstring": "*",
+            "ezyang/htmlpurifier": "~4.6",
+            "lib-pcre": "*",
+            "php": ">=5.4.0",
+            "yiisoft/yii2-composer": "~2.0.4"
+        },
+        "time": "2017-06-05T14:33:41+00:00",
+        "bin": [
+            "yii"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            },
+            {
+                "name": "Alexander Makarov",
+                "email": "sam@rmcreative.ru",
+                "homepage": "http://rmcreative.ru/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Maurizio Domba",
+                "homepage": "http://mdomba.info/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Timur Ruziev",
+                "email": "resurtm@gmail.com",
+                "homepage": "http://resurtm.com/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Dmitry Naumenko",
+                "email": "d.naumenko.a@gmail.com",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Boudewijn Vahrmeijer",
+                "email": "info@dynasource.eu",
+                "homepage": "http://dynasource.eu",
+                "role": "Core framework development"
+            }
+        ],
+        "description": "Yii PHP Framework Version 2",
+        "homepage": "http://www.yiiframework.com/",
+        "keywords": [
+            "framework",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2"
+        }
+    },
+    {
+        "name": "lelaisoft/framework",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://172.16.30.126:3000/lelaisoft/framework.git",
+            "reference": "b2bdfc1eebb3e105cc8e20fb2735ba9992a62457"
+        },
+        "require": {
+            "php": ">=7.0.0",
+            "yiisoft/yii2": ">=2.0.10"
+        },
+        "time": "2017-09-19T07:23:57+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "framework\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "henryzhu",
+                "email": "zhuxiaojiang@lelai.com"
+            }
+        ],
+        "description": "lelai swoole framework"
+    },
+    {
+        "name": "lelaisoft/protocol-message",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://172.16.30.126:3000/lelaisoft/protocol-message.git",
+            "reference": "68b3e9e8d0188761fa0f04cd4365b7d647d810d0"
+        },
+        "require": {
+            "lelaisoft/framework": "*",
+            "php": ">=7.0.0"
+        },
+        "time": "2017-09-19T07:00:15+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "service\\message\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "henryzhu",
+                "email": "zhuxiaojiang@lelai.com"
+            }
+        ],
+        "description": "lelai swoole protocol-message"
+    },
+    {
+        "name": "php-amqplib/php-amqplib",
+        "version": "v2.6.3",
+        "version_normalized": "2.6.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-amqplib/php-amqplib.git",
+            "reference": "fa2f0d4410a11008cb36b379177291be7ee9e4f6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/php-amqplib-php-amqplib-v2.6.3-2af259.zip",
+            "reference": "fa2f0d4410a11008cb36b379177291be7ee9e4f6",
+            "shasum": "b660f385e42b6eec9e8ba1e85662574042126cd2"
+        },
+        "require": {
+            "ext-bcmath": "*",
+            "ext-mbstring": "*",
+            "php": ">=5.3.0"
+        },
+        "replace": {
+            "videlalvaro/php-amqplib": "self.version"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8",
+            "scrutinizer/ocular": "^1.1",
+            "squizlabs/php_codesniffer": "^2.5"
+        },
+        "suggest": {
+            "ext-sockets": "Use AMQPSocketConnection"
+        },
+        "time": "2016-04-11T14:30:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpAmqpLib\\": "PhpAmqpLib/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "PhpAmqpLib\\Tests\\Functional\\": "tests/Functional",
+                "PhpAmqpLib\\Tests\\Unit\\": "tests/Unit"
+            }
+        },
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Alvaro Videla",
+                "role": "Original Maintainer"
+            },
+            {
+                "name": "John Kelly",
+                "email": "johnmkelly86@gmail.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Raúl Araya",
+                "email": "nubeiro@gmail.com",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+        "homepage": "https://github.com/php-amqplib/php-amqplib/",
+        "keywords": [
+            "message",
+            "queue",
+            "rabbitmq"
+        ]
+    },
+    {
+        "name": "webmozart/assert",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/webmozart/assert.git",
+            "reference": "bb2d123231c095735130cc8f6d31385a44c7b308"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/webmozart-assert-1.1.0-d562b0.zip",
+            "reference": "bb2d123231c095735130cc8f6d31385a44c7b308",
+            "shasum": "5fa7f8e155d864b71c1bfc0c5d9bef7d4218b471"
+        },
+        "require": {
+            "php": "^5.3.3|^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.6",
+            "sebastian/version": "^1.0.1"
+        },
+        "time": "2016-08-09T15:02:57+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Webmozart\\Assert\\": "src/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "Webmozart\\Assert\\Tests\\": "tests/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@gmail.com"
+            }
+        ],
+        "description": "Assertions to validate method input/output with nice error messages.",
+        "keywords": [
+            "assert",
+            "check",
+            "validate"
+        ]
+    },
+    {
+        "name": "phpdocumentor/reflection-common",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+            "reference": "144c307535e82c8fdcaacbcfc1d6d8eeb896687c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpdocumentor-reflection-common-1.0-c3be2d.zip",
+            "reference": "144c307535e82c8fdcaacbcfc1d6d8eeb896687c",
+            "shasum": "39f10323bd53953362140c9c93c7680b0224f433"
+        },
+        "require": {
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.6"
+        },
+        "time": "2015-12-27T11:43:31+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": [
+                    "src"
+                ]
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jaap van Otterdijk",
+                "email": "opensource@ijaap.nl"
+            }
+        ],
+        "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+        "homepage": "http://www.phpdoc.org",
+        "keywords": [
+            "FQSEN",
+            "phpDocumentor",
+            "phpdoc",
+            "reflection",
+            "static analysis"
+        ]
+    },
+    {
+        "name": "phpdocumentor/type-resolver",
+        "version": "0.2",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpDocumentor/TypeResolver.git",
+            "reference": "b39c7a5b194f9ed7bd0dd345c751007a41862443"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpdocumentor-type-resolver-0.2-e34c86.zip",
+            "reference": "b39c7a5b194f9ed7bd0dd345c751007a41862443",
+            "shasum": "4306aef230e5ad706ab35836bcebc9e9123596a2"
+        },
+        "require": {
+            "php": ">=5.5",
+            "phpdocumentor/reflection-common": "^1.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^0.9.4",
+            "phpunit/phpunit": "^5.2||^4.8.24"
+        },
+        "time": "2016-06-10T07:14:17+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": [
+                    "src/"
+                ]
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": [
+                    "tests/unit"
+                ]
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mike van Riel",
+                "email": "me@mikevanriel.com"
+            }
+        ]
+    },
+    {
+        "name": "phpdocumentor/reflection-docblock",
+        "version": "3.1.1",
+        "version_normalized": "3.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+            "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpdocumentor-reflection-docblock-3.1.1-319752.zip",
+            "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+            "shasum": "01594f7c5f7435f806ea8c892dd2e361c68ff920"
+        },
+        "require": {
+            "php": ">=5.5",
+            "phpdocumentor/reflection-common": "^1.0@dev",
+            "phpdocumentor/type-resolver": "^0.2.0",
+            "webmozart/assert": "^1.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^0.9.4",
+            "phpunit/phpunit": "^4.4"
+        },
+        "time": "2016-09-30T07:12:33+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": [
+                    "src/"
+                ]
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": [
+                    "tests/unit"
+                ]
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mike van Riel",
+                "email": "me@mikevanriel.com"
+            }
+        ],
+        "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock."
+    },
+    {
+        "name": "phpseclib/phpseclib",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpseclib/phpseclib.git",
+            "reference": "f2154b34ac8110c8353af87cb452e7614dff1bf8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpseclib-phpseclib-2.0.5-555d0c.zip",
+            "reference": "f2154b34ac8110c8353af87cb452e7614dff1bf8",
+            "shasum": "563f10d83688a708bbbe0795d70117b04165724c"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phing/phing": "~2.7",
+            "phpunit/phpunit": "~4.0",
+            "sami/sami": "~2.0",
+            "squizlabs/php_codesniffer": "~2.0"
+        },
+        "suggest": {
+            "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+            "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+            "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
+            "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+        },
+        "time": "2017-05-08T05:58:35+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "phpseclib/bootstrap.php"
+            ],
+            "psr-4": {
+                "phpseclib\\": "phpseclib/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jim Wigginton",
+                "email": "terrafrost@php.net",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Patrick Monnerat",
+                "email": "pm@datasphere.ch",
+                "role": "Developer"
+            },
+            {
+                "name": "Andreas Fischer",
+                "email": "bantu@phpbb.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Hans-Jürgen Petrich",
+                "email": "petrich@tronic-media.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Graham Campbell",
+                "email": "graham@alt-three.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+        "homepage": "http://phpseclib.sourceforge.net",
+        "keywords": [
+            "BigInteger",
+            "aes",
+            "asn.1",
+            "asn1",
+            "blowfish",
+            "crypto",
+            "cryptography",
+            "encryption",
+            "rsa",
+            "security",
+            "sftp",
+            "signature",
+            "signing",
+            "ssh",
+            "twofish",
+            "x.509",
+            "x509"
+        ]
+    },
+    {
+        "name": "phpunit/php-token-stream",
+        "version": "1.4.8",
+        "version_normalized": "1.4.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/php-token-stream.git",
+            "reference": "e4a361b041b80dbce38fb37b949ac6a98763f0a6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-php-token-stream-1.4.8-bb12fe.zip",
+            "reference": "e4a361b041b80dbce38fb37b949ac6a98763f0a6",
+            "shasum": "3cc6f0baa087e850283baa24aa6f1c41687e5723"
+        },
+        "require": {
+            "ext-tokenizer": "*",
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.2"
+        },
+        "time": "2015-09-15T08:08:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Wrapper around PHP's tokenizer extension.",
+        "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
+        "keywords": [
+            "tokenizer"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/php-token-stream/issues"
+        }
+    },
+    {
+        "name": "symfony/yaml",
+        "version": "v3.1.6",
+        "version_normalized": "3.1.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/yaml.git",
+            "reference": "5747e0435b5608507648bebabb940713bbb8e7d0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/symfony-yaml-v3.1.6-b65045.zip",
+            "reference": "5747e0435b5608507648bebabb940713bbb8e7d0",
+            "shasum": "7290272c4cf50004353c7afc20d8bdc5478dca2f"
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "time": "2016-10-24T18:31:12+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Yaml\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Yaml Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "sebastian/version",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/version.git",
+            "reference": "29ca0dcc073253de9ff1f2316d75385033fcc9ab"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-version-2.0.0-2d29b5.zip",
+            "reference": "29ca0dcc073253de9ff1f2316d75385033fcc9ab",
+            "shasum": "e61c3f1442763a60cbdb7ebdcf19c1fd940db245"
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "time": "2016-02-04T12:56:52+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de",
+                "role": "lead"
+            }
+        ],
+        "description": "Library that helps with managing the version number of Git-hosted PHP projects",
+        "homepage": "https://github.com/sebastianbergmann/version",
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/version/issues"
+        }
+    },
+    {
+        "name": "sebastian/resource-operations",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/resource-operations.git",
+            "reference": "eb35907dc618089694b1c2aeef6966e4c897b3c7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-resource-operations-1.0.0-b5a241.zip",
+            "reference": "eb35907dc618089694b1c2aeef6966e4c897b3c7",
+            "shasum": "54dfbf9ec6890a358463e9a52f024002a538562c"
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "time": "2015-07-28T20:34:47+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Provides a list of PHP built-in functions that operate on resources",
+        "homepage": "https://www.github.com/sebastianbergmann/resource-operations"
+    },
+    {
+        "name": "sebastian/recursion-context",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/recursion-context.git",
+            "reference": "7ffb704b37a4896d98047aed89a76ae14b864505"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-recursion-context-1.0.2-46b97a.zip",
+            "reference": "7ffb704b37a4896d98047aed89a76ae14b864505",
+            "shasum": "aa06ca0b3eea90912454fefcffc3e7a45209e9e8"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.4"
+        },
+        "time": "2015-11-11T19:50:13+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            },
+            {
+                "name": "Jeff Welch",
+                "email": "whatthejeff@gmail.com"
+            },
+            {
+                "name": "Adam Harvey",
+                "email": "aharvey@php.net"
+            }
+        ],
+        "description": "Provides functionality to recursively process PHP variables",
+        "homepage": "http://www.github.com/sebastianbergmann/recursion-context"
+    },
+    {
+        "name": "sebastian/object-enumerator",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/object-enumerator.git",
+            "reference": "e16c14df7d833207398625f4bdc37a1415747040"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-object-enumerator-1.0.0-df62ef.zip",
+            "reference": "e16c14df7d833207398625f4bdc37a1415747040",
+            "shasum": "2b0993c4a383d07b8307ab2f8c24fb09dc82cae1"
+        },
+        "require": {
+            "php": ">=5.6",
+            "sebastian/recursion-context": "~1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~5"
+        },
+        "time": "2016-01-28T13:25:10+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Traverses array structures and object graphs to enumerate all referenced objects",
+        "homepage": "https://github.com/sebastianbergmann/object-enumerator/"
+    },
+    {
+        "name": "sebastian/global-state",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/global-state.git",
+            "reference": "dd5fa6462205b9b524ac7dff681e658cbfba9fb8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-global-state-1.1.1-e28361.zip",
+            "reference": "dd5fa6462205b9b524ac7dff681e658cbfba9fb8",
+            "shasum": "9069d7699cee0e16f84672e994ca71b5185ee071"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.2"
+        },
+        "suggest": {
+            "ext-uopz": "*"
+        },
+        "time": "2015-10-11T17:20:09+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "autoload-dev": {
+            "classmap": [
+                "tests/_fixture/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Snapshotting of global state",
+        "homepage": "http://www.github.com/sebastianbergmann/global-state",
+        "keywords": [
+            "global state"
+        ]
+    },
+    {
+        "name": "sebastian/exporter",
+        "version": "1.2.2",
+        "version_normalized": "1.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/exporter.git",
+            "reference": "fdafe2affba6c9a207b200d9d0e34711ced6d06c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-exporter-1.2.2-465b66.zip",
+            "reference": "fdafe2affba6c9a207b200d9d0e34711ced6d06c",
+            "shasum": "28cff7d5af59d4cbd347f0a08f17472cc862e347"
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "sebastian/recursion-context": "~1.0"
+        },
+        "require-dev": {
+            "ext-mbstring": "*",
+            "phpunit/phpunit": "~4.4"
+        },
+        "time": "2016-06-17T09:04:28+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            },
+            {
+                "name": "Jeff Welch",
+                "email": "whatthejeff@gmail.com"
+            },
+            {
+                "name": "Volker Dusch",
+                "email": "github@wallbash.com"
+            },
+            {
+                "name": "Adam Harvey",
+                "email": "aharvey@php.net"
+            },
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@2bepublished.at"
+            }
+        ],
+        "description": "Provides the functionality to export PHP variables for visualization",
+        "homepage": "http://www.github.com/sebastianbergmann/exporter",
+        "keywords": [
+            "export",
+            "exporter"
+        ]
+    },
+    {
+        "name": "sebastian/environment",
+        "version": "1.3.8",
+        "version_normalized": "1.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/environment.git",
+            "reference": "bc836f9fa87937936e66ff03d9090b19fe6c9c4e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-environment-1.3.8-fef739.zip",
+            "reference": "bc836f9fa87937936e66ff03d9090b19fe6c9c4e",
+            "shasum": "4dcb87eef44d84ec28341d173b79622a9f2b76cd"
+        },
+        "require": {
+            "php": "^5.3.3 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8 || ^5.0"
+        },
+        "time": "2016-08-18T05:48:30+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Provides functionality to handle HHVM/PHP environments",
+        "homepage": "http://www.github.com/sebastianbergmann/environment",
+        "keywords": [
+            "environment",
+            "hhvm",
+            "xdebug"
+        ]
+    },
+    {
+        "name": "sebastian/diff",
+        "version": "1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/diff.git",
+            "reference": "646f712b470e47b12ffb6a58041644961a45340d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-diff-1.4.1-e5c17a.zip",
+            "reference": "646f712b470e47b12ffb6a58041644961a45340d",
+            "shasum": "09edcab29d49fafbcef609cc817290511328fb27"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.8"
+        },
+        "time": "2015-12-08T07:14:41+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            },
+            {
+                "name": "Kore Nordmann",
+                "email": "mail@kore-nordmann.de"
+            }
+        ],
+        "description": "Diff implementation",
+        "homepage": "https://github.com/sebastianbergmann/diff",
+        "keywords": [
+            "diff"
+        ]
+    },
+    {
+        "name": "sebastian/comparator",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/comparator.git",
+            "reference": "66729c8fe1db215463bd5a632f60f49b17dc94fd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-comparator-1.2.0-3286e2.zip",
+            "reference": "66729c8fe1db215463bd5a632f60f49b17dc94fd",
+            "shasum": "617d7679457f790e110007b8691d2885b5e27786"
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "sebastian/diff": "~1.2",
+            "sebastian/exporter": "~1.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.4"
+        },
+        "time": "2015-07-26T15:48:44+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            },
+            {
+                "name": "Jeff Welch",
+                "email": "whatthejeff@gmail.com"
+            },
+            {
+                "name": "Volker Dusch",
+                "email": "github@wallbash.com"
+            },
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@2bepublished.at"
+            }
+        ],
+        "description": "Provides the functionality to compare PHP values for equality",
+        "homepage": "http://www.github.com/sebastianbergmann/comparator",
+        "keywords": [
+            "comparator",
+            "compare",
+            "equality"
+        ]
+    },
+    {
+        "name": "phpunit/php-text-template",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/php-text-template.git",
+            "reference": "75aefe65c90fa77db317125ac746ed158f136c25"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-php-text-template-1.2.1-638b73.zip",
+            "reference": "75aefe65c90fa77db317125ac746ed158f136c25",
+            "shasum": "9582839fcf241061c523dec7072e88620e5d4e29"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2015-06-21T13:50:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de",
+                "role": "lead"
+            }
+        ],
+        "description": "Simple template engine.",
+        "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+        "keywords": [
+            "template"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/php-text-template/issues"
+        }
+    },
+    {
+        "name": "doctrine/instantiator",
+        "version": "1.0.5",
+        "version_normalized": "1.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/instantiator.git",
+            "reference": "cd55575e110c24f67c0827911c501697afb21dff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/doctrine-instantiator-1.0.5-6a4414.zip",
+            "reference": "cd55575e110c24f67c0827911c501697afb21dff",
+            "shasum": "e8df0e4a849031c5d2ab2b5dadd061ada29783e1"
+        },
+        "require": {
+            "php": ">=5.3,<8.0-DEV"
+        },
+        "require-dev": {
+            "athletic/athletic": "~0.1.8",
+            "ext-pdo": "*",
+            "ext-phar": "*",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~2.0"
+        },
+        "time": "2015-06-14T21:17:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+            }
+        },
+        "autoload-dev": {
+            "psr-0": {
+                "DoctrineTest\\InstantiatorPerformance\\": "tests",
+                "DoctrineTest\\InstantiatorTest\\": "tests",
+                "DoctrineTest\\InstantiatorTestAsset\\": "tests"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com",
+                "homepage": "http://ocramius.github.com/"
+            }
+        ],
+        "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+        "homepage": "https://github.com/doctrine/instantiator",
+        "keywords": [
+            "constructor",
+            "instantiate"
+        ]
+    },
+    {
+        "name": "phpunit/phpunit-mock-objects",
+        "version": "3.4.0",
+        "version_normalized": "3.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
+            "reference": "fa9ad9cfe6185302451b8ff576a57ae7b36da8ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-phpunit-mock-objects-3.4.0-df8830.zip",
+            "reference": "fa9ad9cfe6185302451b8ff576a57ae7b36da8ba",
+            "shasum": "d9c4a174dd5f19611919ec21e9b48d4e9913312d"
+        },
+        "require": {
+            "doctrine/instantiator": "^1.0.2",
+            "php": "^5.6 || ^7.0",
+            "phpunit/php-text-template": "^1.2",
+            "sebastian/exporter": "^1.2"
+        },
+        "conflict": {
+            "phpunit/phpunit": "<5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.4"
+        },
+        "suggest": {
+            "ext-soap": "*"
+        },
+        "time": "2016-10-09T07:01:45+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "autoload-dev": {
+            "classmap": [
+                "tests/_fixture/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sb@sebastian-bergmann.de",
+                "role": "lead"
+            }
+        ],
+        "description": "Mock Object library for PHPUnit",
+        "homepage": "https://github.com/sebastianbergmann/phpunit-mock-objects/",
+        "keywords": [
+            "mock",
+            "xunit"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/phpunit-mock-objects/issues",
+            "irc": "irc://irc.freenode.net/phpunit"
+        }
+    },
+    {
+        "name": "phpunit/php-timer",
+        "version": "1.0.8",
+        "version_normalized": "1.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/php-timer.git",
+            "reference": "0b788bd6a650d05795227c389b0b24424b8c59d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-php-timer-1.0.8-cad8b8.zip",
+            "reference": "0b788bd6a650d05795227c389b0b24424b8c59d1",
+            "shasum": "5c71be27d22a5f4f2a6756ec8badb37b568467fd"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4|~5"
+        },
+        "time": "2016-05-12T18:03:57+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sb@sebastian-bergmann.de",
+                "role": "lead"
+            }
+        ],
+        "description": "Utility class for timing",
+        "homepage": "https://github.com/sebastianbergmann/php-timer/",
+        "keywords": [
+            "timer"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/php-timer/issues",
+            "irc": "irc://irc.freenode.net/phpunit"
+        }
+    },
+    {
+        "name": "phpunit/php-file-iterator",
+        "version": "1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
+            "reference": "3cc3a145bc8d0789a9b23ee6d7b081a8f0984ff5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-php-file-iterator-1.4.1-af238d.zip",
+            "reference": "3cc3a145bc8d0789a9b23ee6d7b081a8f0984ff5",
+            "shasum": "ae5d726bfdfc5bbaee98d0300b450a790d726ff1"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2015-06-21T13:08:43+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sb@sebastian-bergmann.de",
+                "role": "lead"
+            }
+        ],
+        "description": "FilterIterator implementation that filters files based on a list of suffixes.",
+        "homepage": "https://github.com/sebastianbergmann/php-file-iterator/",
+        "keywords": [
+            "filesystem",
+            "iterator"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
+            "irc": "irc://irc.freenode.net/phpunit"
+        }
+    },
+    {
+        "name": "sebastian/code-unit-reverse-lookup",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
+            "reference": "c40cdf29b6225865cf94a5dc9999652892ddbe89"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/sebastian-code-unit-reverse-lookup-1.0.0-a544df.zip",
+            "reference": "c40cdf29b6225865cf94a5dc9999652892ddbe89",
+            "shasum": "c72937aaf5052491ea715aff2d91d6bd5cb81f65"
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~5"
+        },
+        "time": "2016-02-13T06:45:14+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Looks up which function or method a line of code belongs to",
+        "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/"
+    },
+    {
+        "name": "phpunit/php-code-coverage",
+        "version": "4.0.1",
+        "version_normalized": "4.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+            "reference": "d84f89d3f6884a500c0585d8acb25066c7cf6309"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-php-code-coverage-4.0.1-677956.zip",
+            "reference": "d84f89d3f6884a500c0585d8acb25066c7cf6309",
+            "shasum": "922d654d636d838e013c650562872e931284b808"
+        },
+        "require": {
+            "php": "^5.6 || ^7.0",
+            "phpunit/php-file-iterator": "~1.3",
+            "phpunit/php-text-template": "~1.2",
+            "phpunit/php-token-stream": "^1.4.2",
+            "sebastian/code-unit-reverse-lookup": "~1.0",
+            "sebastian/environment": "^1.3.2 || ^2.0",
+            "sebastian/version": "~1.0|~2.0"
+        },
+        "require-dev": {
+            "ext-xdebug": ">=2.1.4",
+            "phpunit/phpunit": "^5.4"
+        },
+        "suggest": {
+            "ext-dom": "*",
+            "ext-xdebug": ">=2.4.0",
+            "ext-xmlwriter": "*"
+        },
+        "time": "2016-07-26T14:39:29+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sb@sebastian-bergmann.de",
+                "role": "lead"
+            }
+        ],
+        "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
+        "homepage": "https://github.com/sebastianbergmann/php-code-coverage",
+        "keywords": [
+            "coverage",
+            "testing",
+            "xunit"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
+            "irc": "irc://irc.freenode.net/phpunit"
+        }
+    },
+    {
+        "name": "phpspec/prophecy",
+        "version": "v1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpspec/prophecy.git",
+            "reference": "432a32d0fba5850ed5661d771b6a6d08eb7f5db3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpspec-prophecy-v1.6.1-16f05c.zip",
+            "reference": "432a32d0fba5850ed5661d771b6a6d08eb7f5db3",
+            "shasum": "34b04283e6e0e67a2c99b95e9458f7c0e3869478"
+        },
+        "require": {
+            "doctrine/instantiator": "^1.0.2",
+            "php": "^5.3|^7.0",
+            "phpdocumentor/reflection-docblock": "^2.0|^3.0.2",
+            "sebastian/comparator": "^1.1",
+            "sebastian/recursion-context": "^1.0"
+        },
+        "require-dev": {
+            "phpspec/phpspec": "^2.0"
+        },
+        "time": "2016-06-07T08:13:47+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.6.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Prophecy\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Konstantin Kudryashov",
+                "email": "ever.zet@gmail.com",
+                "homepage": "http://everzet.com"
+            },
+            {
+                "name": "Marcello Duarte",
+                "email": "marcello.duarte@gmail.com"
+            }
+        ],
+        "description": "Highly opinionated mocking framework for PHP 5.3+",
+        "homepage": "https://github.com/phpspec/prophecy",
+        "keywords": [
+            "Double",
+            "Dummy",
+            "Fake",
+            "Mock",
+            "Spy",
+            "Stub"
+        ]
+    },
+    {
+        "name": "myclabs/deep-copy",
+        "version": "1.5.4",
+        "version_normalized": "1.5.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/myclabs/DeepCopy.git",
+            "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/myclabs-deep-copy-1.5.4-9394a6.zip",
+            "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
+            "shasum": "a5f0556d4a8d7eba5876d10fc05c6c507177cc8c"
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "doctrine/collections": "1.*",
+            "phpunit/phpunit": "~4.1"
+        },
+        "time": "2016-09-16T13:37:59+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "DeepCopy\\": "src/DeepCopy/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "DeepCopyTest\\": "tests/DeepCopyTest/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "description": "Create deep copies (clones) of your objects",
+        "homepage": "https://github.com/myclabs/DeepCopy",
+        "keywords": [
+            "clone",
+            "copy",
+            "duplicate",
+            "object",
+            "object graph"
+        ]
+    },
+    {
+        "name": "phpunit/phpunit",
+        "version": "5.6.2",
+        "version_normalized": "5.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/phpunit.git",
+            "reference": "463eea3e58b1ad3ece98dbc51c1a46bd0102f40d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpunit-phpunit-5.6.2-f62c81.zip",
+            "reference": "463eea3e58b1ad3ece98dbc51c1a46bd0102f40d",
+            "shasum": "ad4b757738193eb86ecdabef9203301b45c8da39"
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-json": "*",
+            "ext-libxml": "*",
+            "ext-mbstring": "*",
+            "ext-xml": "*",
+            "myclabs/deep-copy": "~1.3",
+            "php": "^5.6 || ^7.0",
+            "phpspec/prophecy": "^1.3.1",
+            "phpunit/php-code-coverage": "^4.0.1",
+            "phpunit/php-file-iterator": "~1.4",
+            "phpunit/php-text-template": "~1.2",
+            "phpunit/php-timer": "^1.0.6",
+            "phpunit/phpunit-mock-objects": "^3.2",
+            "sebastian/comparator": "~1.1",
+            "sebastian/diff": "~1.2",
+            "sebastian/environment": "^1.3 || ^2.0",
+            "sebastian/exporter": "~1.2",
+            "sebastian/global-state": "~1.0",
+            "sebastian/object-enumerator": "~1.0",
+            "sebastian/resource-operations": "~1.0",
+            "sebastian/version": "~1.0|~2.0",
+            "symfony/yaml": "~2.1|~3.0"
+        },
+        "conflict": {
+            "phpdocumentor/reflection-docblock": "3.0.2"
+        },
+        "require-dev": {
+            "ext-pdo": "*"
+        },
+        "suggest": {
+            "ext-xdebug": "*",
+            "phpunit/php-invoker": "~1.1"
+        },
+        "time": "2016-10-25T07:40:25+00:00",
+        "bin": [
+            "phpunit"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.6.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "autoload-dev": {
+            "classmap": [
+                "tests/"
+            ],
+            "files": [
+                "src/Framework/Assert/Functions.php",
+                "tests/_files/CoveredFunction.php"
+            ]
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de",
+                "role": "lead"
+            }
+        ],
+        "description": "The PHP Unit Testing framework.",
+        "homepage": "https://phpunit.de/",
+        "keywords": [
+            "phpunit",
+            "testing",
+            "xunit"
+        ],
+        "support": {
+            "issues": "https://github.com/sebastianbergmann/phpunit/issues"
+        }
+    },
+    {
+        "name": "yiisoft/yii2-redis",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-redis.git",
+            "reference": "c04142f419a7e56fd4ea1e76ea69869771362124"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-redis-2.0.4-ac26fe.zip",
+            "reference": "c04142f419a7e56fd4ea1e76ea69869771362124",
+            "shasum": "87b96de7173265d9dd2160843a56b496ac7d30c9"
+        },
+        "require": {
+            "yiisoft/yii2": ">=2.0.4"
+        },
+        "time": "2015-05-10T22:10:19+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\redis\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc"
+            }
+        ],
+        "description": "Redis Cache, Session and ActiveRecord for the Yii framework",
+        "keywords": [
+            "active-record",
+            "cache",
+            "redis",
+            "session",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-redis/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-redis"
+        }
+    },
+    {
+        "name": "swiftmailer/swiftmailer",
+        "version": "v5.4.1",
+        "version_normalized": "5.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/swiftmailer/swiftmailer.git",
+            "reference": "f1063a0d6790d70aac4698b65b885d1c09bc925c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/swiftmailer-swiftmailer-v5.4.1-9a6a6f.zip",
+            "reference": "f1063a0d6790d70aac4698b65b885d1c09bc925c",
+            "shasum": "5fff6a895e8a395aabcfbe32a2770d592d5d97e7"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9.1,<0.9.4"
+        },
+        "time": "2015-06-06T14:19:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/swift_required.php"
+            ]
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Corbyn"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Swiftmailer, free feature-rich PHP mailer",
+        "homepage": "http://swiftmailer.org",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-swiftmailer",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
+            "reference": "19ba0fbe59a4691fd92bbd3e0ee19bff50292443"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-swiftmailer-2.0.4-c8c855.zip",
+            "reference": "19ba0fbe59a4691fd92bbd3e0ee19bff50292443",
+            "shasum": "4286707792bce51bd29afae56e0e94544e5ec303"
+        },
+        "require": {
+            "swiftmailer/swiftmailer": "~5.0",
+            "yiisoft/yii2": ">=2.0.4"
+        },
+        "time": "2015-05-10T22:12:32+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\swiftmailer\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com"
+            }
+        ],
+        "description": "The SwiftMailer integration for the Yii framework",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer",
+            "swift",
+            "swiftmailer",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-swiftmailer/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-swiftmailer"
+        }
+    },
+    {
+        "name": "yiisoft/yii2-codeception",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-codeception.git",
+            "reference": "c0f3beeff6131202e77ccb2654699ea0d067ee7d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-codeception-2.0.4-1db914.zip",
+            "reference": "c0f3beeff6131202e77ccb2654699ea0d067ee7d",
+            "shasum": "77b413aba00a5e0b219c3b88220058b2142b547b"
+        },
+        "require": {
+            "yiisoft/yii2": ">=2.0.4"
+        },
+        "time": "2015-05-10T22:08:30+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\codeception\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mark Jebri",
+                "email": "mark.github@yandex.ru"
+            }
+        ],
+        "description": "The Codeception integration for the Yii framework",
+        "keywords": [
+            "codeception",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-codeception/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-codeception"
+        }
+    },
+    {
+        "name": "yiisoft/yii2-bootstrap",
+        "version": "2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+            "reference": "fc8ba331fc3de75e24ba96f3f1960cf4e252d08f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-bootstrap-2.0.6-977095.zip",
+            "reference": "fc8ba331fc3de75e24ba96f3f1960cf4e252d08f",
+            "shasum": "3210022bf87344ea39b1f8124017200313479952"
+        },
+        "require": {
+            "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+            "yiisoft/yii2": ">=2.0.6"
+        },
+        "time": "2016-03-17T03:29:28+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            },
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\bootstrap\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The Twitter Bootstrap extension for the Yii framework",
+        "keywords": [
+            "bootstrap",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-bootstrap/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-bootstrap"
+        }
+    },
+    {
+        "name": "yiisoft/yii2-debug",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-debug.git",
+            "reference": "05be1ad89aa6501ee834acace6a789c3c0608989"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-debug-2.0.5-3cb366.zip",
+            "reference": "05be1ad89aa6501ee834acace6a789c3c0608989",
+            "shasum": "1bd3846b9a18c55398fbdfe93bf71cc4f1795e89"
+        },
+        "require": {
+            "yiisoft/yii2": ">=2.0.4",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2015-08-06T16:14:06+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\debug\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The debugger extension for the Yii framework",
+        "keywords": [
+            "debug",
+            "debugger",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-debug/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-debug"
+        }
+    },
+    {
+        "name": "fzaninotto/faker",
+        "version": "v1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fzaninotto/Faker.git",
+            "reference": "d0190b156bcca848d401fb80f31f504f37141c8d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/fzaninotto-faker-v1.5.0-b07a90.zip",
+            "reference": "d0190b156bcca848d401fb80f31f504f37141c8d",
+            "shasum": "ae048cba8c909e50f3fd62442d0a767bc8e1f8ec"
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.5"
+        },
+        "suggest": {
+            "ext-intl": "*"
+        },
+        "time": "2015-05-29T06:29:14+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.5.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Faker\\": "src/Faker/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "Faker\\PHPUnit\\": "test/Faker/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "François Zaninotto"
+            }
+        ],
+        "description": "Faker is a PHP library that generates fake data for you.",
+        "keywords": [
+            "data",
+            "faker",
+            "fixtures"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-faker",
+        "version": "2.0.3",
+        "version_normalized": "2.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-faker.git",
+            "reference": "b88ca69ee226a3610b2c26c026c3203d7ac50f6c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-faker-2.0.3-fd6410.zip",
+            "reference": "b88ca69ee226a3610b2c26c026c3203d7ac50f6c",
+            "shasum": "844af60b188b63f560755aabec1ef3d2a61561a0"
+        },
+        "require": {
+            "fzaninotto/faker": "*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2015-03-01T06:22:44+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\faker\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mark Jebri",
+                "email": "mark.github@yandex.ru"
+            }
+        ],
+        "description": "Fixture generator. The Faker integration for the Yii framework.",
+        "keywords": [
+            "faker",
+            "fixture",
+            "yii2"
+        ],
+        "support": {
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2"
+        }
+    },
+    {
+        "name": "phpspec/php-diff",
+        "version": "v1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpspec/php-diff.git",
+            "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/phpspec-php-diff-v1.0.2-b63c58.zip",
+            "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
+            "shasum": "87a99be653114cc74317c1329cdb0d150c3ab4b4"
+        },
+        "time": "2013-11-01T13:02:21+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Diff": "lib/"
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Chris Boulton",
+                "homepage": "http://github.com/chrisboulton"
+            }
+        ],
+        "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays)."
+    },
+    {
+        "name": "bower-asset/typeahead.js",
+        "version": "v0.10.5",
+        "version_normalized": "0.10.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twitter/typeahead.js.git",
+            "reference": "5f198b87d1af845da502ea9df93a5e84801ce742"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twitter/typeahead.js/zipball/5f198b87d1af845da502ea9df93a5e84801ce742",
+            "reference": "5f198b87d1af845da502ea9df93a5e84801ce742",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.7"
+        },
+        "require-dev": {
+            "bower-asset/jasmine-ajax": "~1.3.1",
+            "bower-asset/jasmine-jquery": "~1.5.2",
+            "bower-asset/jquery": "~1.7"
+        },
+        "time": "2014-08-08T06:18:07+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "dist/typeahead.bundle.js"
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "yiisoft/yii2-gii",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-gii.git",
+            "reference": "8ebe6d0d7edf96bf7f0e869118aa3db861e46a00"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://packages.lelai.com/dist/yiisoft-yii2-gii-2.0.4-dc459f.zip",
+            "reference": "8ebe6d0d7edf96bf7f0e869118aa3db861e46a00",
+            "shasum": "7603bd44697cf81fac93e0d7f52d9a41409a549d"
+        },
+        "require": {
+            "bower-asset/typeahead.js": "0.10.*",
+            "phpspec/php-diff": ">=1.0.2",
+            "yiisoft/yii2": ">=2.0.4",
+            "yiisoft/yii2-bootstrap": "~2.0"
+        },
+        "time": "2015-05-10T22:09:31+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            },
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\gii\\": ""
+            }
+        },
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The Gii extension for the Yii framework",
+        "keywords": [
+            "code generator",
+            "gii",
+            "yii2"
+        ],
+        "support": {
+            "issues": "https://github.com/yiisoft/yii2-gii/issues",
+            "forum": "http://www.yiiframework.com/forum/",
+            "wiki": "http://www.yiiframework.com/wiki/",
+            "irc": "irc://irc.freenode.net/yii",
+            "source": "https://github.com/yiisoft/yii2-gii"
+        }
+    }
+]

@@ -1,0 +1,202 @@
+<?php
+
+namespace service\components\sales;
+
+use common\models\LeMerchantStore;
+use common\redis\Keys;
+use framework\db\readonly\models\core\Rule;
+use service\components\Proxy;
+use service\components\sales\quote\WholesalerDiscount;
+use service\components\Tools;
+
+class WholesalerQuote extends Quote
+{
+    // 商品
+    protected $_items = [];
+
+    /** @var  LeMerchantStore $_wholesaler */
+    protected $_wholesaler;
+
+    //ruleQuote 分组后的购物车
+    public $_quotes = [];
+    //商家所有的活动，包括订单级，商品级
+    public $_rules;
+
+    public $_trade_rule;
+
+    public function __construct($customer, $rules = null)
+    {
+        $this->_rules = $rules;
+        //rule key 0表示订单级活动，大于0表示商品级活动
+        $wholesalerRule = null;
+        if (isset($rules[0]) && $rules[0]) {
+            $wholesalerRule = $rules[0];
+        }
+        $this->_trade_rule = "1、默认按供应商设置的起送价。\r\n2、免起送条件：如当天已下有效订单，再下单可免起送价。";
+        parent::__construct($customer, $wholesalerRule);
+    }
+
+    /**
+     * Author Jason Y.Wang
+     * @param $wholesalerCartItems
+     * $_items 为分组后的商品
+     * @return $this
+     */
+    public function setWholesalerItems($wholesalerCartItems)
+    {
+        $this->_items = $wholesalerCartItems;
+        return $this;
+    }
+
+    public function collectTotals()
+    {
+
+        foreach ($this->_items as $rule_key => $items) {
+            $this->initRuleQuote($rule_key, $items);
+        }
+
+        $discount = new WholesalerDiscount();
+        $discount->collect($this);
+
+        return $this->formatToArray();
+    }
+
+    /**
+     * Author Jason Y.Wang
+     * @param $rule_key
+     * @param $items
+     * 分组后的商品，分别进行优惠计算
+     */
+    private function initRuleQuote($rule_key, $items)
+    {
+
+        //购物车中普通商品在一个rule_cart中
+        //有商品级优惠的商品在一个rule_cart中
+        //秒杀商品
+        if ($rule_key === 'speckill') {
+            $ruleQuote = RuleQuote::init($this->customer);
+            $ruleQuote->rule_type = 4;//秒杀商品
+        } else {
+            $rule = null;
+            //有商品级的活动，且活动正在生效
+            if ($rule_key && isset($this->_rules[$rule_key])) {
+                /** @var Rule $rule */
+                $rule = $this->_rules[$rule_key];
+                //每天活动享受次数
+                $enjoyTimes = Tools::getEnjoyDailyTimes($this->customer->getCustomerId(), $rule->rule_id);
+                //总享受次数
+                $enjoy_times_all_key = Keys::getEnjoyTimesKey($this->customer->getCustomerId(), $rule->rule_id);
+                $enjoy_times_all = Tools::getRedis()->get($enjoy_times_all_key);
+                if ($rule->rule_uses_daily_limit && $enjoyTimes >= $rule->rule_uses_daily_limit &&
+                    $enjoy_times_all >=  $rule->rule_uses_daily_limit) {
+                    //无法在享受活动
+                    $rule = null;
+                }
+            }
+
+            $ruleQuote = RuleQuote::init($this->customer, $rule);
+        }
+
+        foreach ($items as $item) {
+            $ruleQuote->addProduct($item);
+        }
+
+        $ruleQuote->collectTotals();
+
+        $this->_quotes[] = $ruleQuote;
+    }
+
+    public function formatToArray()
+    {
+        $cartInfo = [
+            'wholesaler_id' => $this->getWholesalerId(),
+            'wholesaler_name' => $this->getWholesalerName(),
+            'grand_total' => $this->grandTotal,
+            'sub_total' => $this->subTotal,
+            'prom_total' => $this->discountAmount,
+            'trade_rule' => $this->_trade_rule,
+            'short_name' => $this->getWholesalerShortName(),
+            'rule_title' => $this->_rule_title,
+            'rule_str' => $this->_rule_str,
+        ];
+
+        if(!$this->subsidies_lelai_included){
+            $cartInfo['store_rule_short'] = '特价商品不参与本活动';
+            $cartInfo['store_rule_full'] = '特价商品不参与本活动，优惠计算时会扣除特价商品金额';
+        }
+
+        $min_trade_amount = ceil($this->getMinTradeAmount());
+        $orderCountToday = Proxy::getOrderCountToday($this->customer, $this->getWholesalerId());
+        //起送价问题
+        if ($min_trade_amount != 0) {
+            if ($orderCountToday > 0) {
+                $cartInfo['tips'] = '本单免起送价';
+                $cartInfo['min_trade_amount'] = 0;
+            } else {
+                $cartInfo['tips'] = '每天首单满' . $min_trade_amount . '元起送';
+                $cartInfo['min_trade_amount'] = $min_trade_amount;
+            }
+
+        } else {
+            $cartInfo['tips'] = '本单免起送价';
+            $cartInfo['min_trade_amount'] = 0;
+        }
+
+        if ($this->rebates != 0) {
+            $rebates_str = '本单预计可返现¥' . number_format($this->rebates, 2, null, '');
+            $cartInfo['rebates_str'] = $rebates_str;
+        }
+
+        /** @var RuleQuote $quote */
+        foreach ($this->_quotes as $quote) {
+            $quoteCartInfo = $quote->formatToArray();
+            $cartInfo['rule_cart'][] = $quoteCartInfo;
+        }
+        return $cartInfo;
+    }
+
+    public function setRuleStr($ruleValidResult, $discountAmount, $nextDiscountAmount)
+    {
+        parent::setRuleStr($ruleValidResult, $discountAmount, $nextDiscountAmount); // TODO: Change the autogenerated stub
+        //店铺级别
+        $this->_rule_title = '全店铺';
+    }
+
+
+    public function setWholesaler($wholesaler)
+    {
+        $this->_wholesaler = $wholesaler;
+        return $this;
+    }
+
+    public function getWholesaler()
+    {
+        return $this->_wholesaler;
+    }
+
+    public function getWholesalerId()
+    {
+        return $this->_wholesaler['wholesaler_id'];
+    }
+
+    public function getWholesalerName()
+    {
+        if (!empty($this->_wholesaler['short_name'])) {
+            return $this->_wholesaler['short_name'];
+        } else {
+            return $this->_wholesaler['wholesaler_name'];
+        }
+    }
+
+    public function getWholesalerShortName()
+    {
+        $this->_wholesaler['short_name'];
+    }
+
+    private function getMinTradeAmount()
+    {
+        return $this->_wholesaler['min_trade_amount'];
+    }
+
+
+}

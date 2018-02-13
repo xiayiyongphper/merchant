@@ -1,0 +1,72 @@
+[2017-12-28 10:35:19] Array
+(
+    [worker_num] => 2
+    [task_worker_num] => 4
+    [daemonize] => 1
+    [log_file] => /home/xia/swoole/merchant/branches/v2.6.7/swoole.log
+    [open_length_check] => 1
+    [package_max_length] => 8192000
+    [package_length_type] => N
+    [package_length_offset] => 0
+    [package_body_offset] => 4
+    [heartbeat_check_interval] => 60
+    [heartbeat_idle_time] => 600
+    [task_ipc_mode] => 3
+    [message_queue_key] => 838994165
+    [discard_timeout_request] => 1
+)
+
+[2017-12-28 19:51:18] Array
+(
+    [worker_num] => 2
+    [task_worker_num] => 4
+    [daemonize] => 1
+    [log_file] => /home/xia/swoole/merchant/branches/v2.6.7/swoole.log
+    [open_length_check] => 1
+    [package_max_length] => 8192000
+    [package_length_type] => N
+    [package_length_offset] => 0
+    [package_body_offset] => 4
+    [heartbeat_check_interval] => 60
+    [heartbeat_idle_time] => 600
+    [task_ipc_mode] => 3
+    [message_queue_key] => 838994165
+    [discard_timeout_request] => 1
+)
+
+[2017-12-28 19:53:10] Array
+(
+    [worker_num] => 2
+    [task_worker_num] => 4
+    [daemonize] => 1
+    [log_file] => /home/xia/swoole/merchant/branches/v2.6.7/swoole.log
+    [open_length_check] => 1
+    [package_max_length] => 8192000
+    [package_length_type] => N
+    [package_length_offset] => 0
+    [package_body_offset] => 4
+    [heartbeat_check_interval] => 60
+    [heartbeat_idle_time] => 600
+    [task_ipc_mode] => 3
+    [message_queue_key] => 838994165
+    [discard_timeout_request] => 1
+)
+
+[2017-12-28 19:56:06] Array
+(
+    [worker_num] => 2
+    [task_worker_num] => 4
+    [daemonize] => 1
+    [log_file] => /home/xia/swoole/merchant/branches/v2.6.7/swoole.log
+    [open_length_check] => 1
+    [package_max_length] => 8192000
+    [package_length_type] => N
+    [package_length_offset] => 0
+    [package_body_offset] => 4
+    [heartbeat_check_interval] => 60
+    [heartbeat_idle_time] => 600
+    [task_ipc_mode] => 3
+    [message_queue_key] => 838994165
+    [discard_timeout_request] => 1
+)
+

@@ -1,0 +1,580 @@
+[2018-01-22 15:44:44] RedisException: read error on connection in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->lLen('merchant_msg_qu...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/service/models/Process.php(26): framework\redis\Cache->__call('lLen', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): service\models\Process->run(Object(framework\core\SOAServer), Object(swoole_process))
+#4 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#7 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::rPush(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::rPush():...', '/home/xia/swool...', 91, Array)
+#1 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"le...')
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(91): framework\components\es\ESLogger->log(Array, 4)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(40): framework\components\es\Console->log('{"local":[{"mod...', 'merchant_5a6596...', Array)
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+
+Next RedisException: Connection lost in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"le...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(91): framework\components\es\ESLogger->log(Array, 4)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(40): framework\components\es\Console->log('{"local":[{"mod...', 'merchant_5a6596...', Array)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Timeline.php(69): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(95): framework\components\es\Timeline->report('route.report', 'sendRequest', 'merchant', 0.00014209747314453, 2, '', 0)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(248): framework\components\ProxyAbstract::sendRequest(Object(service\message\common\Header), Object(service\message\core\ReportRouteRequest))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(41): framework\components\ProxyAbstract::reportServices(Array)
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#9 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#10 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#11 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#12 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"le...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 1)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(63): framework\components\es\ESLogger->log(Array, 1)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(96): framework\components\es\Console->logException(Object(yii\base\ErrorException))
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(248): framework\components\ProxyAbstract::sendRequest(Object(service\message\common\Header), Object(service\message\core\ReportRouteRequest))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(41): framework\components\ProxyAbstract::reportServices(Array)
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#9 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#10 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#11 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#12 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 1)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(63): framework\components\es\ESLogger->log(Array, 1)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(96): framework\components\es\Console->logException(Object(yii\base\ErrorException))
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(248): framework\components\ProxyAbstract::sendRequest(Object(service\message\common\Header), Object(service\message\core\ReportRouteRequest))
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(41): framework\components\ProxyAbstract::reportServices(Array)
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 1)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(63): framework\components\es\ESLogger->log(Array, 1)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(96): framework\components\es\Console->logException(Object(yii\base\ErrorException))
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/ProxyAbstract.php(248): framework\components\ProxyAbstract::sendRequest(Object(service\message\common\Header), Object(service\message\core\ReportRouteRequest))
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(41): framework\components\ProxyAbstract::reportServices(Array)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 1)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(63): framework\components\es\ESLogger->log(Array, 1)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(45): framework\components\es\Console->logException(Object(yii\base\ErrorException))
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::rPush(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::rPush():...', '/home/xia/swool...', 91, Array)
+#1 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SOAServer.php(222): framework\components\es\Collectd->report('connections_cou...', 0)
+#7 [internal function]: framework\core\SOAServer->framework\core\{closure}(2)
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: Connection lost in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SOAServer.php(222): framework\components\es\Collectd->report('connections_cou...', 0)
+#6 [internal function]: framework\core\SOAServer->framework\core\{closure}(2)
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::rPush(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::rPush():...', '/home/xia/swool...', 91, Array)
+#1 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(44): framework\components\es\Collectd->report('load_avg_5', 0.11)
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#9 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#10 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#11 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#12 {main}
+
+Next RedisException: Connection lost in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(44): framework\components\es\Collectd->report('load_avg_5', 0.11)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(45): framework\components\es\Collectd->report('load_avg_10', 0.34)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(46): framework\components\es\Collectd->report('load_avg_15', 0.38)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(46): framework\components\es\Collectd->report('load_avg_15', 0.38)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(46): framework\components\es\Collectd->report('load_avg_15', 0.38)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(49): framework\components\es\Collectd->report('cpu_user_time', 415139)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(50): framework\components\es\Collectd->report('cpu_idle_time', 8207874)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(50): framework\components\es\Collectd->report('cpu_idle_time', 8207874)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(50): framework\components\es\Collectd->report('cpu_idle_time', 8207874)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(51): framework\components\es\Collectd->report('cpu_system_time', 210202)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(54): framework\components\es\Collectd->report('disk_reads', 91089)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(54): framework\components\es\Collectd->report('disk_reads', 91089)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(54): framework\components\es\Collectd->report('disk_reads', 91089)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(55): framework\components\es\Collectd->report('disk_writes', 110151)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(56): framework\components\es\Collectd->report('disk_time_spend...', 153584)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(56): framework\components\es\Collectd->report('disk_time_spend...', 153584)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(56): framework\components\es\Collectd->report('disk_time_spend...', 153584)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(57): framework\components\es\Collectd->report('disk_time_spend...', 6982912)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(60): framework\components\es\Collectd->report('memory_total', 8120384)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(60): framework\components\es\Collectd->report('memory_total', 8120384)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(60): framework\components\es\Collectd->report('memory_total', 8120384)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(61): framework\components\es\Collectd->report('memory_used', 7200948)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(62): framework\components\es\Collectd->report('memory_free', 919436)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(62): framework\components\es\Collectd->report('memory_free', 919436)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(62): framework\components\es\Collectd->report('memory_free', 919436)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:44] yii\base\ErrorException: Redis::connect(): connect() failed: Connection refused in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:89
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Redis::connect(...', '/home/xia/swool...', 89, Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(89): Redis->connect('127.0.0.1', 6379)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(65): framework\components\es\Collectd->report('uptime', 22304)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"ho...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(66): framework\components\es\Collectd->report('idle_time', 82483)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#8 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#9 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#10 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#11 {main}
+[2018-01-22 15:44:44] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(66): framework\components\es\Collectd->report('idle_time', 82483)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Collectd.php(61): framework\components\es\ESLogger->log(Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(66): framework\components\es\Collectd->report('idle_time', 82483)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ESProcess.php(26): framework\process\ESProcess::collectSysinfo()
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ESProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+[2018-01-22 15:44:45] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:91
+Stack trace:
+#0 [internal function]: Redis->rPush('logstash-lelai-...', '{"message":{"le...')
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(91): call_user_func_array(Array, Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(91): framework\components\es\ESLogger->log(Array, 4)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(40): framework\components\es\Console->log('{"local":[{"mod...', 'merchant_5a6596...', Array)
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#7 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#8 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#9 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#10 {main}
+[2018-01-22 15:44:45] RedisException: Redis server went away in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:95
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php(95): Redis->ping()
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(91): framework\components\es\ESLogger->log(Array, 4)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(40): framework\components\es\Console->log('{"local":[{"mod...', 'merchant_5a6596...', Array)
+#5 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#6 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#7 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#8 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#9 {main}
+
+Next RedisException: ping failed! in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/redis/Cache.php:97
+Stack trace:
+#0 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/log/RedisLogger.php(44): framework\redis\Cache->__call('rPush', Array)
+#1 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/ESLogger.php(49): framework\components\log\RedisLogger->log(Array, 4)
+#2 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/components/es/Console.php(91): framework\components\es\ESLogger->log(Array, 4)
+#3 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/process/ReportProcess.php(40): framework\components\es\Console->log('{"local":[{"mod...', 'merchant_5a6596...', Array)
+#4 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(322): framework\process\ReportProcess->run(Object(framework\core\SOAServer), Object(swoole_process))
+#5 [internal function]: framework\core\SWServer->framework\core\{closure}(Object(swoole_process))
+#6 /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/core/SWServer.php(263): swoole_server->start()
+#7 /home/xia/swoole/merchant/branches/v2.6.7/server_merchant.php(38): framework\core\SWServer->serve()
+#8 {main}

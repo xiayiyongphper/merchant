@@ -1,0 +1,26 @@
+[2017-12-28 19:51:18 @13727.0]	WARNING	swSocket_bind: bind(0.0.0.0:9501) failed. Error: Address already in use [98]
+PHP Fatal error:  swoole_server::__construct(): listen server port failed. in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/HttpServer.php on line 58
+[2017-12-28 19:53:10 @14410.0]	WARNING	swSocket_bind: bind(0.0.0.0:9501) failed. Error: Address already in use [98]
+PHP Fatal error:  swoole_server::__construct(): listen server port failed. in /home/xia/swoole/merchant/branches/v2.6.7/vendor/lelaisoft/framework/HttpServer.php on line 58
+[2017-12-28 19:55:36 $24218.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=0, signal=9
+[2017-12-28 19:55:36 $24218.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=0, signal=9
+[2017-12-28 19:55:36 $24218.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=0, signal=9
+[2017-12-28 19:55:36 $24218.0]	WARNING	swManager_check_exit_status: worker#2 abnormal exit, status=0, signal=9
+[2017-12-28 19:56:43 $14705.0]	WARNING	swSignal_callback: signal[1] callback is null.
+[2017-12-28 19:56:43 #14694.0]	NOTICE	Server is shutdown now.
+[2017-12-28 19:56:43 *14547.1]	WARNING	swSignal_callback: signal[1] callback is null.
+[2017-12-28 19:56:43 *14548.2]	WARNING	swSignal_callback: signal[1] callback is null.
+[2017-12-29 19:29:36 #11551.0]	NOTICE	Server is shutdown now.
+[2017-12-29 19:29:36 $11566.0]	WARNING	swSignal_callback: signal[1] callback is null.
+[2018-01-22 17:16:24 #30021.0]	NOTICE	Server is shutdown now.
+[2018-01-22 17:16:24 $30035.0]	WARNING	swSignal_callback: signal[1] callback is null.
+[2018-01-24 15:22:04 $22925.0]	WARNING	swManager_check_exit_status: worker#2 abnormal exit, status=0, signal=9
+[2018-01-24 15:22:04 $22925.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=0, signal=9
+[2018-01-24 15:22:04 $22925.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=0, signal=9
+[2018-01-24 15:22:04 $22925.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=0, signal=9
+[2018-01-24 15:57:45 $27650.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=0, signal=9
+[2018-01-24 15:57:45 $27650.0]	WARNING	swManager_check_exit_status: worker#2 abnormal exit, status=0, signal=9
+[2018-01-24 15:57:45 $27650.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=0, signal=9
+[2018-01-24 15:57:45 $27650.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=0, signal=9
+[2018-02-09 18:33:33 $16715.0]	WARNING	swSignal_callback: signal[1] callback is null.
+[2018-02-09 18:33:33 #16703.0]	NOTICE	Server is shutdown now.
